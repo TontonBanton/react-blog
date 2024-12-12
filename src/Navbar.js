@@ -4,7 +4,16 @@ const NavBar = () => {
       <h1>React Blog</h1>
       <div className="links">
         <a href="/">Home</a>
-        <a href="/create">New Blog</a>
+
+        {/* Using In-line CSS */}
+        <a href="/create" style= {
+          {
+            color: 'white',
+            backgroundColor: '#f17a35',
+            borderRadius: '6px'
+          }
+        }>New Blog</a>
+
       </div>
     </nav>
   )
